@@ -1,11 +1,13 @@
 Summary:	GNU Binary Utility Development Utilities
 Summary(de):	GNU Binary Utility Development Utilities
+Summary(es):	Utilitarios para desarrollo de binarios de la GNU
 Summary(fr):	Utilitaires de développement binaire de GNU
 Summary(pl):	Narzêdzia GNU dla programistów
+Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU
 Summary(tr):	GNU geliþtirme araçlarý
 Name:		crossmipsel-binutils
 Version:	2.11.90.0.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -16,7 +18,7 @@ URL:		http://sourceware.cygnus.com/binutils/
 Prereq:		/sbin/ldconfig
 BuildRequires:	flex
 BuildRequires:	bison
-BuildRequires:	perl
+BuildRequires:	perl-devel
 BuildRequires:	bash
 %ifarch sparc sparc32
 BuildRequires:	sparc32
@@ -80,6 +82,10 @@ install -d $RPM_BUILD_ROOT%{_prefix}
 	infodir=$RPM_BUILD_ROOT%{_infodir} \
 	includedir=$RPM_BUILD_ROOT%{_includedir} \
 	libdir=$RPM_BUILD_ROOT%{_libdir}
+
+# remove these man pages unless we cross-build for win*/netware platforms.
+# however, this should be done in Makefiles.
+rm -f $RPM_BUILD_ROOT%{_mandir}/man1/{*dlltool,*nlmconv,*windres}.1
 
 gzip -9nf README
 
