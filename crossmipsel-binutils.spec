@@ -5,7 +5,7 @@ Summary(pl):	Skro¶ne narzêdzia programistyczne GNU dla AVR MIPSel - binutils
 Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU - MIPSel binutils
 Summary(tr):	GNU geliþtirme araçlarý - MIPSel binutils
 Name:		crossmipsel-binutils
-Version:	2.11.92.0.12.3
+Version:	2.15.91.0.1
 Release:	1
 License:	GPL
 Group:		Development/Tools
