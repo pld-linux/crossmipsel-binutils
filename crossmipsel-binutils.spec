@@ -6,8 +6,8 @@ Summary(pl):	Narzêdzia GNU dla programistów
 Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU
 Summary(tr):	GNU geliþtirme araçlarý
 Name:		crossmipsel-binutils
-Version:	2.11.90.0.8
-Release:	2
+Version:	2.11.92.0.12.3
+Release:	1
 License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -96,5 +96,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{target}-*
+%dir %{arch}/bin
+%attr(755,root,root) %{arch}/bin/*
+%dir %{arch}/lib
+%dir %{arch}/lib/*
 %{_libdir}/ldscripts/*
 %{_mandir}/man?/%{target}-*
