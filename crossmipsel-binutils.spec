@@ -1,10 +1,9 @@
-Summary:	GNU Binary Utility Development Utilities
-Summary(de):	GNU Binary Utility Development Utilities
-Summary(es):	Utilitarios para desarrollo de binarios de la GNU
-Summary(fr):	Utilitaires de développement binaire de GNU
-Summary(pl):	Narzêdzia GNU dla programistów
-Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU
-Summary(tr):	GNU geliþtirme araçlarý
+Summary:	Cross MIPSel GNU binary utility development utilities - binutils
+Summary(es):	Utilitarios para desarrollo de binarios de la GNU - MIPSel binutils
+Summary(fr):	Utilitaires de développement binaire de GNU - MIPSel binutils
+Summary(pl):	Skro¶ne narzêdzia programistyczne GNU dla AVR MIPSel - binutils
+Summary(pt_BR):	Utilitários para desenvolvimento de binários da GNU - MIPSel binutils
+Summary(tr):	GNU geliþtirme araçlarý - MIPSel binutils
 Name:		crossmipsel-binutils
 Version:	2.11.92.0.12.3
 Release:	1
@@ -40,7 +39,7 @@ Binutils is a collection of binary utilities, including:
 - addr2line - convert addresses to file and line,
 - nlmconv - convert object code into an NLM.
 
-Cross version for MIPS Little Endian.
+This package contains the cross version for MIPS Little Endian.
 
 %description -l pl
 Pakiet binutils zawiera zestaw narzêdzi umo¿liwiaj±cych kompilacjê
@@ -48,7 +47,8 @@ programów. Znajduj± siê tutaj miêdzy innymi assembler, konsolidator
 (linker), a tak¿e inne narzêdzia do manipulowania binarnymi plikami
 programów i bibliotek.
 
-Wersja cross generuj±ca dla MIPS Little Endian.
+Ten pakiet zawiera wersjê skro¶n± generuj±c± kod dla ostrokoñcej (ang.
+Little Endian) architektury MIPS.
 
 %prep
 %setup -q -n binutils-%{version}
