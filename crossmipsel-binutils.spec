@@ -61,7 +61,8 @@ CONFIG_SHELL="/bin/bash" \
 %ifarch sparc
 sparc32 \
 %endif
-./configure
+./configure \
+	--disable-shared \
 	--prefix=%{_prefix} \
 	--infodir=%{_infodir} \
 	--mandir=%{_mandir} \
@@ -89,7 +90,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%attr(755,root,root) %{arch}/bin/*
-%{arch}/lib/*
 %attr(755,root,root) %{_bindir}/%{target}-*
+%{_libdir}/ldscripts/*
 %{_mandir}/man?/%{target}-*
