@@ -72,13 +72,9 @@ sparc32 \
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_prefix}
 
-%{__make} install install-info \
+%{__make} install \
 	prefix=$RPM_BUILD_ROOT%{_prefix} \
-	tooldir=$RPM_BUILD_ROOT%{_prefix} \
-	mandir=$RPM_BUILD_ROOT%{_mandir} \
-	infodir=$RPM_BUILD_ROOT%{_infodir} \
-	includedir=$RPM_BUILD_ROOT%{_includedir} \
-	libdir=$RPM_BUILD_ROOT%{_libdir}
+	mandir=$RPM_BUILD_ROOT%{_mandir}
 
 # remove these man pages unless we cross-build for win*/netware platforms.
 # however, this should be done in Makefiles.
@@ -97,5 +93,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{arch}/bin/*
 %dir %{arch}/lib
 %dir %{arch}/lib/*
-%{_libdir}/ldscripts/*
 %{_mandir}/man?/%{target}-*
