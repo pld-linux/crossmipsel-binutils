@@ -1,9 +1,9 @@
 Summary:	Cross MIPSel GNU binary utility development utilities - binutils
-Summary(es.UTF-8):   Utilitarios para desarrollo de binarios de la GNU - MIPSel binutils
-Summary(fr.UTF-8):   Utilitaires de développement binaire de GNU - MIPSel binutils
-Summary(pl.UTF-8):   Skrośne narzędzia programistyczne GNU dla AVR MIPSel - binutils
-Summary(pt_BR.UTF-8):   Utilitários para desenvolvimento de binários da GNU - MIPSel binutils
-Summary(tr.UTF-8):   GNU geliştirme araçları - MIPSel binutils
+Summary(es.UTF-8):	Utilitarios para desarrollo de binarios de la GNU - MIPSel binutils
+Summary(fr.UTF-8):	Utilitaires de développement binaire de GNU - MIPSel binutils
+Summary(pl.UTF-8):	Skrośne narzędzia programistyczne GNU dla AVR MIPSel - binutils
+Summary(pt_BR.UTF-8):	Utilitários para desenvolvimento de binários da GNU - MIPSel binutils
+Summary(tr.UTF-8):	GNU geliştirme araçları - MIPSel binutils
 Name:		crossmipsel-binutils
 Version:	2.17.50.0.3
 Release:	1
