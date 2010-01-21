@@ -5,13 +5,12 @@ Summary(pl.UTF-8):	Skrośne narzędzia programistyczne GNU dla AVR MIPSel - binu
 Summary(pt_BR.UTF-8):	Utilitários para desenvolvimento de binários da GNU - MIPSel binutils
 Summary(tr.UTF-8):	GNU geliştirme araçları - MIPSel binutils
 Name:		crossmipsel-binutils
-Version:	2.19.50.0.1
+Version:	2.20.51.0.5
 Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.kernel.org/pub/linux/devel/binutils/binutils-%{version}.tar.bz2
-# Source0-md5:	c71bf140587a5662bd1fa9d5a19556ed
-Patch0:		binutils-mips-relocs.patch
+# Source0-md5:	6d2de7cdf7a8389e70b124e3d73b4d37
 URL:		http://sources.redhat.com/binutils/
 BuildRequires:	automake
 BuildRequires:	bash
@@ -53,7 +52,6 @@ Little Endian) architektury MIPS.
 
 %prep
 %setup -q -n binutils-%{version}
-%patch0 -p0
 
 %build
 cp -f /usr/share/automake/config.sub .
