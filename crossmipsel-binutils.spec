@@ -6,7 +6,7 @@ Summary(pt_BR.UTF-8):	Utilitários para desenvolvimento de binários da GNU - MI
 Summary(tr.UTF-8):	GNU geliştirme araçları - MIPSel binutils
 Name:		crossmipsel-binutils
 Version:	2.20.51.0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.kernel.org/pub/linux/devel/binutils/binutils-%{version}.tar.bz2
